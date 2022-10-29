@@ -19,6 +19,21 @@ contract NotRareToken is ERC721 {
     }
 }
 
+/**
+Compiled 1 Solidity file successfully
+
+
+  Distribute
+    Gas target
+           Current gas use:   5349517
+           The gas target is: 6029700
+      ✔ The functions MUST meet the expected gas efficiency (9182ms)
+    Business logic
+      ✔ The attacker MUST mint 150 NFTs in one transaction (8034ms)
+
+
+  2 passing (19s)
+ */
 contract OptimizedAttacker {
     constructor(address victim) payable {
         uint256 ownerOfData;
